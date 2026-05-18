@@ -1,5 +1,4 @@
 const x = 505;
-let compare = [];
 
 /**
  * @param {number} x
@@ -7,6 +6,7 @@ let compare = [];
  */
 var isPalindrome = function(x) {
   x = String(x);
+  let compare = [];
   for (let i = x.length - 1; i > -1; i--) {
     compare.push(x[i])
   }
@@ -14,3 +14,4 @@ var isPalindrome = function(x) {
 };
 
 console.log(isPalindrome(x));
+// 9~11ms
